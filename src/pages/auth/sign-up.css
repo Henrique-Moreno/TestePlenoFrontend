@@ -1,0 +1,167 @@
+.sign-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-blue-2);
+  padding: 1.25rem;
+}
+
+.sign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 1.25rem;
+}
+
+.sign-logo {
+  margin-top: 2rem;
+}
+
+.sign-logo img {
+  width: 9.375rem;
+  height: auto;
+}
+
+.button-secondary {
+  padding: 1rem 0.99rem;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-blue-1);
+  color: var(--color-grey-0);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: var(--color-grey-2);
+}
+
+.sign-form {
+  width: 100%;
+  max-width: 25rem;
+  background-color: var(--color-blue-1);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.sign-form h1 {
+  text-align: center;
+  color: var(--color-grey-0);
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  color: var(--color-grey-0);
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.input-default {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-grey-1);
+  border-radius: 0.25rem;
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-0);
+  font-size: 0.875rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-default:focus {
+  border-color: var(--color-grey-0);
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-grey-0);
+}
+
+.button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-primary-focus);
+}
+
+.headline {
+  text-align: center;
+  color: var(--color-grey-0);
+  font-size: 0.75rem;
+}
+
+.sign-form textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.sign-form select {
+  appearance: none;
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-0);
+}
+
+.sign-form select:focus {
+  border-color: var(--color-grey-0);
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-grey-0);
+}
+
+@media (max-width: 480px) {
+  .sign-container {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .sign-logo img {
+    width: 120px;
+  }
+
+  .sign-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .input-default {
+    padding: 8px 16px;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sign-container {
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+  .sign-logo img {
+    width: 150px;
+  }
+
+  .sign-form {
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,135 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-blue-1);
+  color: var(--color-grey-0);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--color-blue-2);
+  align-items: center;
+  width: 100%;
+  max-height: 100vh;
+  border-bottom: 1px solid var(--color-blue-1);
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-blue-2);
+  width: 100%;
+  max-height: 100vh;
+  font-size: 2.5rem;
+  border-bottom: 1px solid var(--color-blue-1);
+}
+
+.header-logo {
+  margin-top: 2rem;
+}
+
+.header-logo img {
+  width: 9.375rem;
+  height: auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--color-blue-2);
+  align-items: center;
+  width: 100%;
+  max-height: 100vh;
+  padding: 3rem 0;
+}
+
+.header-content p {
+  color: var(--color-grey-1);
+}
+
+.home-main {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.home-section p {
+  font-size: 1rem;
+}
+
+.livros-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.livro-item {
+  background-color: var(--color-blue-2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.livro-item h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--color-grey-0);
+}
+
+.livro-item p {
+  margin: 0.25rem 0;
+  color: var(--color-grey-1);
+}
+
+.livro-item span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--color-grey-0);
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .header-actions {
+    background-color: var(--color-blue-1);
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .livros-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    padding: 0 1rem;
+  }
+
+  .livro-item {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .livro-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .livro-item p {
+    font-size: 0.875rem;
+  }
+}
